@@ -12,19 +12,19 @@ const todoList = [{
     status: 'done',
 }, {
     title: 'Call my boss',
-    description: "Don't forget to do it",
+    description: "Or i'll get fired",
     status: 'progress',
 }, {
     title: 'Fix my car',
-    description: "Don't forget to do it",
+    description: "Or buy new one...",
     status: 'done',
 }, {
-    title: 'Send flowers to my wife',
-    description: "Don't forget to do it",
+    title: 'Send flowers to my mom',
+    description: "Unless you don't want saturday breakfast",
     status: 'new',
 }, {
-    title: 'Send flowers to my mom',
-    description: "Don't forget to do it",
+    title: 'Send flowers to my wife',
+    description: "Or forget about the weekend",
     status: 'new',
 }];
 

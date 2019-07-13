@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../src/style.css"/>
+    <script>
+        var items = [
+            {
+                title: "Do my homework",
+                description: "Don't forget to do it",
+                status: "new"
+            },
+            {
+                title: "Do my homework",
+                description: "Don't forget to do it",
+                status: "new"
+            },
+            {
+                title: "Do my homework",
+                description: "Don't forget to do it",
+                status: "new"
+            }
+        ];
+
+        var item = {
+                title: "Do my homework",
+                description: "Don't forget to do it",
+                status: "new"
+            };
+
+        var title = "Do my homework";
+        var description = "Don't forget to do it";
+        var staus = "new";
+        var sentence = "Title: " + title + ".\nDescription: " + description + ".\nStatus: " + staus;
+        var sentence = "Title: " + item.title + ".\nDescription: " + item.description + ".\nStatus: " + item.status;
+        alert(sentence)
+    </script>
+</head>
+<body>
+<div id='todo-list'>
+
+    <div id='todo-list-header'>
+        <h1>My Todo List</h1>
+        <button>Add New Item</button>
+    </div>
+
+    <div>
+        <div class='todo-item'>
+            <div>
+                <h3>Do my homework</h3>
+                <p>Don't forget to do it</p>
+                <p>Status: new</p>
+            </div>
+            <div class='change-order'>
+                <h4>Actions:</h4>
+                <span class='action-button'>&#8593;</span>
+                <span class='action-button'>&#8595;</span>
+                <span class='action-button'>&#10008;</span>
+                <span class='action-button'><span>&#10000;</span></span>
+            </div>
+        </div>
+
+        <div class='todo-item'>
+            <div>
+                <h3>Buy milk and rice</h3>
+                <p>For saturday breakfast</p>
+                <p>Status: new</p>
+            </div>
+            <div class='change-order'>
+                <h4>Actions:</h4>
+                <span class='action-button'>&#8593;</span>
+                <span class='action-button'>&#8595;</span>
+                <span class='action-button'>&#10008;</span>
+                <span class='action-button'><span>&#10000;</span></span>
+            </div>
+        </div>
+
+        <div class='todo-item'>
+            <div>
+                <h3>Take the kids to school</h3>
+                <p>address: King david 24</p>
+                <p>Status: new</p>
+            </div>
+            <div class='change-order'>
+                <h4>Actions:</h4>
+                <span class='action-button'>&#8593;</span>
+                <span class='action-button'>&#8595;</span>
+                <span class='action-button'>&#10008;</span>
+                <span class='action-button'><span>&#10000;</span></span>
+            </div>
+        </div>
+
+        <div class='todo-item'>
+            <div>
+                <h3>Cal my boss</h3>
+                <p>Or i'll get fired</p>
+                <p>Status: new</p>
+            </div>
+            <div class='change-order'>
+                <h4>Actions:</h4>
+                <span class='action-button'>&#8593;</span>
+                <span class='action-button'>&#8595;</span>
+                <span class='action-button'>&#10008;</span>
+                <span class='action-button'><span>&#10000;</span></span>
+            </div>
+        </div>
+
+        <div class='todo-item'>
+            <div>
+                <h3>Fix my car</h3>
+                <p>Or buy new one...</p>
+                <p>Status: new</p>
+            </div>
+            <div class='change-order'>
+                <h4>Actions:</h4>
+                <span class='action-button'>&#8593;</span>
+                <span class='action-button'>&#8595;</span>
+                <span class='action-button'>&#10008;</span>
+                <span class='action-button'><span>&#10000;</span></span>
+            </div>
+        </div>
+
+        <div class='todo-item'>
+            <div>
+                <h3>Send flowers to my mom</h3>
+                <p>Unless you don't want saturday breakfast</p>
+                <p>Status: new</p>
+            </div>
+            <div class='change-order'>
+                <h4>Actions:</h4>
+                <span class='action-button'>&#8593;</span>
+                <span class='action-button'>&#8595;</span>
+                <span class='action-button'>&#10008;</span>
+                <span class='action-button'><span>&#10000;</span></span>
+            </div>
+        </div>
+
+        <div class='todo-item'>
+            <div>
+                <h3>Send flowers to my wife</h3>
+                <p>Or forget about the weekend</p>
+                <p>Status: new</p>
+            </div>
+            <div class='change-order'>
+                <h4>Actions:</h4>
+                <span class='action-button'>&#8593;</span>
+                <span class='action-button'>&#8595;</span>
+                <span class='action-button'>&#10008;</span>
+                <span class='action-button'><span>&#10000;</span></span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -45,7 +45,7 @@ class App extends React.Component {
             editMode: -1,
             activeFilter: null
         };
-        this.sayHello();
+        // this.sayHello();
 
     };
 
@@ -202,36 +202,36 @@ class App extends React.Component {
                 <div id={'todo-list-items'}>
                     {this.state.items.map((item, i) => {
                         if (!item.hide) {
-                            // return (
-                            //     <TodoItem key={i}
-                            //               index={i}
-                            //               {...item}
-                            //               editMode={editMode}
-                            //               actions={{
-                            //                   handleChange: this.handleChange,
-                            //                   changeStatus: this.changeStatus,
-                            //                   moveItemUp: this.moveItemUp,
-                            //                   moveItemDown: this.moveItemDown,
-                            //                   switchMode: this.switchMode,
-                            //                   deleteItem: this.deleteItem,
-                            //               }} />
-                            // )
                             return (
-                                <div>
-                                    <div>
-                                        <h3>Name: Israel</h3>
-                                        <p>Age: 73</p>
-                                    </div>
-                                    <div>
-                                        <h3>Name: USA</h3>
-                                        <p>Age: 243</p>
-                                    </div>
-                                    <div>
-                                        <h3>Name: France</h3>
-                                        <p>Age: 230</p>
-                                    </div>
-                                </div>
+                                <TodoItem key={i}
+                                          index={i}
+                                          {...item}
+                                          editMode={editMode}
+                                          actions={{
+                                              handleChange: this.handleChange,
+                                              changeStatus: this.changeStatus,
+                                              moveItemUp: this.moveItemUp,
+                                              moveItemDown: this.moveItemDown,
+                                              switchMode: this.switchMode,
+                                              deleteItem: this.deleteItem,
+                                          }} />
                             )
+                            // return (
+                            //     <div>
+                            //         <div>
+                            //             <h3>Name: Israel</h3>
+                            //             <p>Age: 73</p>
+                            //         </div>
+                            //         <div>
+                            //             <h3>Name: USA</h3>
+                            //             <p>Age: 243</p>
+                            //         </div>
+                            //         <div>
+                            //             <h3>Name: France</h3>
+                            //             <p>Age: 230</p>
+                            //         </div>
+                            //     </div>
+                            // )
                         }
                     })}
                 </div>

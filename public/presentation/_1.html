@@ -4,24 +4,76 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../../src/style.css"/>
+
+
+    <script>
+        var listItems = [
+            {
+                title: 'Call my boss',
+                description: 'Do it',
+                status: 'new'
+            },
+            {
+                title: 'Call my mom',
+                description: 'Do it today!',
+                status: 'old'
+            }
+        ];
+
+        var numbers = [1,2,3,4,5,6,7,8];
+
+        var bigNumbers = numbers.map((num) => {
+            return num * 10;
+        })
+
+        alert(bigNumbers)
+
+    </script>
 </head>
 
 
 <body>
-<div id="todo-list">
     <h1>My Todo List</h1>
     <button>Add new item</button>
-    <div>
-        <h3>Do My Homework</h3>
-        <p>Don't forget to do it!</p>
-        <p>status: new</p>
+    <div id="todo-list">
+        <div>
+            <h4>Call my boss</h4>
+            <p>Do it!</p>
+            <p>status: new</p>
+        </div>
+
+        <div>
+            <h4>Call my mom</h4>
+            <p>Do it today!</p>
+            <p>status: old</p>
+        </div>
+
+        <div>
+            <h4>Call my mom</h4>
+            <p>Do it today!</p>
+            <p>status: old</p>
+        </div>
+
+        <div>
+            <h4>Call my mom</h4>
+            <p>Do it today!</p>
+            <p>status: old</p>
+        </div>
+
+        <div>
+            <h4>Call my mom</h4>
+            <p>Do it today!</p>
+            <p>status: old</p>
+        </div>
+
+
+        <div>
+            <h4>Call my mom</h4>
+            <p>Do it today!</p>
+            <p>status: old</p>
+        </div>
     </div>
-    <div>
-        <h3>Buy Milk and Rice</h3>
-        <p>Don't forget to do it!</p>
-        <p>status: new</p>
-    </div>
-</div>
+
 </body>
 
 </html>

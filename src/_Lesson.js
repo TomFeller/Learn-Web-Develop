@@ -6,23 +6,98 @@ import './style.css';
 
 class App extends React.Component {
 
-    sayHello = () => {
-        alert("Hello!");
-    };
-
     render() {
-        this.sayHello()
+        const listItems = [
+            {
+                title: 'Call my boss',
+                description: 'Do it',
+                status: 'new'
+            },
+            {
+                title: 'Call my mom',
+                description: 'Do it today!',
+                status: 'old'
+            },
+            {
+                title: 'Call my boss',
+                description: 'Do it',
+                status: 'new'
+            },
+            {
+                title: 'Call my mom',
+                description: 'Do it today!',
+                status: 'old'
+            },
+            {
+                title: 'Call my boss',
+                description: 'Do it',
+                status: 'new'
+            },
+            {
+                title: 'Call my mom',
+                description: 'Do it today!',
+                status: 'old'
+            },
+            {
+                title: 'Call my boss',
+                description: 'Do it',
+                status: 'new'
+            },
+            {
+                title: 'Call my mom',
+                description: 'Do it today!',
+                status: 'old'
+            },
+            {
+                title: 'Call my boss',
+                description: 'Do it',
+                status: 'new'
+            },
+            {
+                title: 'Call my mom',
+                description: 'Do it today!',
+                status: 'old'
+            },
+            {
+                title: 'Call my boss',
+                description: 'Do it',
+                status: 'new'
+            },
+            {
+                title: 'Call my mom',
+                description: 'Do it today!',
+                status: 'old'
+            }
+        ];
         return (
             <div id="todo-list">
-                <TodoItem/>
-                <TodoItem/>
-                <TodoItem/>
-                <TodoItem/>
-                <TodoItem/>
+                {listItems.map((item) => {
+                    return (
+                        <div>
+                            <h4>{item.title}</h4>
+                            <p>{item.description}</p>
+                            <p>{item.status}</p>
+                        </div>
+                    )
+                })}
             </div>
         )
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

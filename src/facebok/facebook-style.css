@@ -1,0 +1,314 @@
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #e9ebee;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+h5 {
+    padding: 5px 10px;
+    margin: 0;
+}
+h6 {
+    font-size:13px;
+}
+.pointer {
+    cursor: pointer;
+}
+
+.action-icon {
+    margin: 0 10px;
+}
+
+.action-icon img {
+    display: block
+}
+
+#facebook-header {
+    background-color: #3b5998;
+    padding: 10px 0 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: visible;
+}
+
+#facebook-header .facebook-logout-mode .logo {
+    color: #ffffff;
+    font-size: 50px;
+}
+
+#facebook-header .facebook-form {
+    display: flex;
+    align-items: flex-end;
+}
+
+#facebook-header .facebook-form .form-field {
+    padding: 0 10px;
+}
+
+#facebook-header .facebook-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#facebook-header .facebook-form input {
+    height: 23px;
+    width: 15rem;
+}
+
+#facebook-header .facebook-form .submit-button {
+    background-color: #4267b2;
+    border: 1px solid #000000;
+    color: #ffffff;
+    margin-left: 10px;
+    height: 29px;
+}
+
+#facebook-header .error-message {
+    margin: 0;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.facebook-logout-mode,
+.facebook-login-mode {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #ffffff;
+}
+
+.facebook-login-mode .logo-wrapper {
+    display: flex;
+}
+
+.facebook-login-mode .logo {
+    margin-right: 10px
+}
+
+.facebook-login-mode .search_field input {
+    height: 26px;
+    width: 300px;
+    border: 0;
+}
+
+.facebook-login-mode .user_thumbnail {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.facebook-login-mode .user_thumbnail img {
+    width: 100%;
+}
+
+.user-details-data {
+    position: relative;
+}
+
+.user-data-list {
+    position: absolute;
+    top: 41px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid rgba(100, 100, 100, .4);
+    border-radius: 0 0 2px 2px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+}
+
+.user-data-list-item {
+    padding: 5px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    align-items: center;
+}
+
+.user-data-list-thumbnail {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+}
+
+.user-data-list-details h5, .user-data-list-details p {
+    color: #000000;
+    margin: 0;
+    padding: 0px 10px;
+    font-size: 13px;
+}
+
+.user-data-list-details h5 {
+    color: #000000;
+}
+
+.user-data-post {
+
+}
+
+#facebook-content .container {
+    width: 600px;
+}
+
+.user-data-post-header {
+    padding: 10px;
+}
+
+.user-data-post {
+
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    border: 1px solid rgba(100, 100, 100, .4);
+    border-radius: 0 0 2px 2px;
+}
+
+.user-data-post-likes-and-shares {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-data-post-likes-and-shares p {
+    padding: 0 10px;
+}
+
+.comment {
+    padding: 5px 10px;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.comment-thumbnail {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+.comment-details {
+    background-color: #f2f3f5;
+    border-radius: 18px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.comment-actions a {
+    font-size: 10px;
+    padding: 0 5px;
+    text-decoration: none;
+    color: #4267b2;
+
+}
+.comment-actions  {
+    padding-left: 10px;
+}
+.comment p {
+    margin: 0;
+    font-size: 10px;
+    padding: 0 10px;
+}
+#post-comments {
+    border-top: 1px solid #000;
+    padding-top: 10px;
+}
+#post-comments h6 {
+    padding: 0 10px 10px;
+    margin: 0;
+}
+.user-data-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-data-image-wrapper {
+    width: 25%;
+    padding: 5px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+
+}
+.user-data-image{
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+.user-data-image-likes {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #000000;
+}
+.user-data-image-likes .like-icon {
+    width:20px;
+    position: absolute;
+    left: -25px;
+}
+.user-data-image img {
+    width: 100%;
+}
+
+.user-cover-profile-image {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    margin-right: 20px;
+}
+
+#facebook-cover {
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+}
+
+#facebook-cover .container {
+    position: relative;
+    width: 900px;
+    height: 100%;
+}
+
+.user-cover-details {
+    position: absolute;
+    bottom: -20px;
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+button {
+    outline: 0 !important;
+}
+.loader {
+    width: 20px;
+}

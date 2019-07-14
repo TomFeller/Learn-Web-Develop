@@ -13,11 +13,6 @@ class FacebookLogoutMode extends React.Component {
         };
 
     };
-
-    componentDidMount() {
-
-    }
-
     handleChange = (e) => {
         const {name, value} = e.target;
         this.setState({
@@ -32,7 +27,7 @@ class FacebookLogoutMode extends React.Component {
 
         this.setState({
             isLoading: true
-        })
+        });
 
         fetch(`https://api.youdoadventures.com/imga/facebook-users-json.js`, {
             method: 'GET',
@@ -63,7 +58,7 @@ class FacebookLogoutMode extends React.Component {
     };
 
     render() {
-        const {user_email, user_password, userData, showErrorMessage} = this.state;
+        const {user_email, user_password, showErrorMessage} = this.state;
 
         return (
             <div className={'facebook-logout-mode'}>

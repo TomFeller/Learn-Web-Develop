@@ -1,5 +1,4 @@
 import React from 'react';
-import {facebookUsers} from "./facebook-users";
 
 class FacebookLogoutMode extends React.Component {
     constructor(props) {
@@ -35,6 +34,7 @@ class FacebookLogoutMode extends React.Component {
             response => response.json()
         ).then(
             success => {
+                console.log('success: ', success);
                 const userData = success.find(user => user.email === user_email);
                 if (userData) {
                     this.setState({

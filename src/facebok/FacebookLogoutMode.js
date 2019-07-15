@@ -51,10 +51,6 @@ class FacebookLogoutMode extends React.Component {
         ).catch(
             error => console.log(error)
         );
-
-        // console.log(JSON.stringify(facebookUsers));
-        //
-
     };
 
     render() {
@@ -76,7 +72,7 @@ class FacebookLogoutMode extends React.Component {
                         </div>
                         <div>
                             <label>Password</label>
-                            <input type={'text'}
+                            <input type={'password'}
                                    name={'user_password'}
                                    value={user_password}
                                    onChange={this.handleChange}/>
